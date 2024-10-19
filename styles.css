@@ -1,0 +1,305 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.navbar {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: white;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: none;
+  background-color: #444;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  color: white;
+  border-radius: 5px;
+}
+
+.user-details:hover .user-info {
+  display: block;
+}
+
+.dashboard-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.typing-test-section, .results-section {
+  margin-bottom: 20px;
+}
+
+.text-display {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #e0e0e0;
+}
+
+.highlight {
+  background-color: green; /* Green for correct */
+}
+
+.highlight-wrong {
+  background-color: red; /* Red for wrong */
+}
+
+#userInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  height: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#progressFill {
+  background-color: #6200ea;
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+:root {
+  --bg-color: #f0f0f0;
+  --text-color: #333;
+  --primary-color: #4a90e2;
+  --secondary-color: #e2e2e2;
+  --accent-color: #f39c12;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme {
+  --bg-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --secondary-color: #2c2c2c;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  position: relative;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.user-info {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.user-icon:hover .user-info {
+  display: block;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.settings {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.typing-area {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  resize: none;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 1rem;
+}
+
+:root {
+  --bg-color: #f0f0f0;
+  --text-color: #333;
+  --primary-color: #4a90e2;
+  --secondary-color: #e2e2e2;
+  --accent-color: #f39c12;
+}
+
+.dark-theme {
+  --bg-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --secondary-color: #2c2c2c;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.paragraph,
+#userInput,
+.stat-label,
+.user-info,
+button,
+.nav-items {
+  color: var(--text-color);
+}
